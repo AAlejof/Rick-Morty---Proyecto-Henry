@@ -1,0 +1,21 @@
+
+.SearchBarButton{
+    height: 3rem;
+    background-color: #bfde42;
+    border-top-right-radius : 2rem;
+    border-bottom-right-radius : 2rem;
+    border: solid;
+    padding: 0.5rem  1rem;
+    font-size: 1.5rem ;
+
+}
+
+.SearchBarInput{
+    width: 12rem;
+    height: 3rem;
+    border: solid;
+    padding: 1rem;
+    border-top-left-radius : 2rem;
+    border-bottom-left-radius : 2rem;
+    font-size: 1.5rem;
+}
