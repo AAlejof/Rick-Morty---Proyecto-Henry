@@ -1,0 +1,14 @@
+@font-face {
+   font-family: 'get_schwifty';
+   src: local('get_schwifty'), url(./assets/fonts/get_schwifty.ttf) format('truetype');
+ }
+
+.App {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   /* height: 100vw;
+   width: 100vw; */
+   justify-content: center;
+   align-items: center;
+}

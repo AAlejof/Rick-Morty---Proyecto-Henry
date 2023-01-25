@@ -1,0 +1,45 @@
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    width: 50rem;
+    height: 40rem;
+    background-image: url("https://media1.giphy.com/media/Yo2fMrTG6dgLdiKX2z/giphy.gif?cid=790b7611de2a007ce9b8b6e4f7e796b4ec2950c7dd1329d6&rid=giphy.gif&ct=s");
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+   
+}
+
+.loginInput{
+    width: 17rem;
+    height: 2rem;
+    border: solid;
+    padding-left: 1rem;
+    border-radius : 2rem;
+    font-size: 1.5rem;
+}
+
+.loginButton{
+    width: 7rem;
+    height: 3rem;
+    margin: 2rem;
+    background-color: #bfde42;
+    border-radius : 2rem;
+    border: solid;
+    padding: 0.5rem  1rem;
+    font-size: 1.5rem ;
+
+}
+
+.loginLogo{
+    width: 500px
+}

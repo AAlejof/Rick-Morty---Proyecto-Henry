@@ -1,0 +1,14 @@
+/* .cardsContainer{
+    display: flex;
+    width: 90%;
+} */
+
+.divCards {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+
+}
