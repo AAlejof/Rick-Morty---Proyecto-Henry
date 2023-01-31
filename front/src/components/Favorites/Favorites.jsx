@@ -7,9 +7,9 @@ function Favorites(props) {
     const dispatch = useDispatch();
     const { myFavorites } = useSelector((state) => state);
 
-    const char =props.characters.filter((event) =>{
-        return myFavorites.includes(event.id)
-    })
+    // const char =props.characters.filter((event) =>{
+    //     return myFavorites.includes(event.id)
+    // })
 
     const handleClick = (event) => {
         event.preventDefault();

@@ -7,14 +7,14 @@ import Favorites from './components/Favorites/Favorites';
 import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Form from './components/Form/Form';
-// import Error404 from './components/Error404/Error404';
+
 
 function App() {
   const location = useLocation()
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
   const [access, setAccess] = useState(false);
-  
+
   const username = 'example@gmail.com';
   const password = '1password';
 
@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     !access && navigate('/')
     // eslint-disable-next-line
-  },[access]);
+  }, [access]);
 
 
 
@@ -46,9 +46,10 @@ function App() {
             setCharacters((oldChars) => [...oldChars, data]);
           }
         } else {
-          window.alert('No character with that Id...');
+          alert('No character with that Id...');
         }
       })
+      .catch(err => console.log(err))
   }
 
   const onClose = (id) => {
@@ -61,12 +62,11 @@ function App() {
     <div className='App' style={{ padding: '25px' }}>
       {location.pathname === "/" ? <Form login={login} /> : <Navbar onSearch={onSearch} />}
       <Routes>
-        {/* <Route path="/" element={<Form login={login} />}></Route> */}
-        <Route path='home' element={<Cards onClose={onClose} characters={characters} />} />
+        <Route path='home' element={<Cards onClose={onClose} characters={characters} onSearch={onSearch}/>} />
         <Route path='about' element={<About />} />
         <Route path='detail/:detailId' element={<Detail />} />
         <Route path='/favorites' element={<Favorites characters={characters} onClose={onClose} />}
-				/>
+        />
       </Routes>
 
     </div>

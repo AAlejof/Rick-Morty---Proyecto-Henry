@@ -3,7 +3,7 @@ import styles from './Nav.module.css'
 import logo from "../../assets/logoRM.png"
 import SearchBar from '../SearchBar/SearchBar.jsx'
 import { Link } from "react-router-dom";
-import Favorites from '../Favorites/Favorites';
+//import Favorites from '../Favorites/Favorites';
 
 
 
@@ -28,7 +28,9 @@ const Navbar = ({ onSearch }) => {
           About
         </button>
       </Link>
-      <div className={styles.NavSearchBar}><SearchBar onSearch={onSearch} /></div>
+      <div className={styles.NavSearchBar}>
+        <SearchBar onSearch={onSearch} />
+      </div>
 
       <Link to='/'><button className={styles.NavbarButton}>
           Logout

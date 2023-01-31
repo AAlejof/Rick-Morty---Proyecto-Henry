@@ -10,13 +10,18 @@ function SearchBar({ onSearch }) {
       setCharacter(event.target.value)
    }
 
-   
+   const handleKeyDown = (event) => {
+      if (event.key === 'Enter') {
+         onSearch(character);
+      }
+   }
 
    return (
       <div>
          <input className={styles.SearchBarInput}
             type='search'
-            value={character} onChange={handleChange} />
+            placeholder='Enter N° 1-826'
+            value={character} onChange={handleChange} onKeyDown={handleKeyDown}/>
          <button className={styles.SearchBarButton} onClick={() => onSearch(character)}>Add</button>
       </div>
    );

@@ -1,7 +1,22 @@
-/* .cardsContainer{
+
+.h1{
+    font-size: 6rem;
+    color: #bfde42;
+    text-shadow: 4px 4px black;
+    margin: 2rem;
+    font-family: 'get_schwifty' ;
+}
+
+.divSearchBar{
     display: flex;
-    width: 90%;
-} */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    width: 50rem;
+    height: 40rem;
+    background-image: url("https://media1.giphy.com/media/Yo2fMrTG6dgLdiKX2z/giphy.gif?cid=790b7611de2a007ce9b8b6e4f7e796b4ec2950c7dd1329d6&rid=giphy.gif&ct=s");
+}
 
 .divCards {
     display: flex;

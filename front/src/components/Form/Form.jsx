@@ -3,7 +3,6 @@ import logo from "../../assets/logoRM.png"
 import styles from './Form.module.css';
 import validation from "./validation";
 
-//import { Link } from "react-router-dom";
 
 const Form = ({login}) => {
 
@@ -37,6 +36,7 @@ const Form = ({login}) => {
 
 
     return (
+        
         <div className={styles.div}>
             <img className={styles.loginLogo} src={logo} alt="Rick&Morty logo" />
             <form className={styles.loginForm} onSubmit={(event) => { handleSubmit(event) }} >
