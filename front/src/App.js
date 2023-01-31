@@ -3,41 +3,42 @@ import Cards from './components/Card/Cards.jsx';
 import Navbar from './components/Nav/Nav.jsx';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
+import Favorites from './components/Favorites/Favorites';
 import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Form from './components/Form/Form';
-import Favorites from './components/Favorites/Favorites';
 // import Error404 from './components/Error404/Error404';
 
 function App() {
-  const [characters, setCharacters] = useState([]);
   const location = useLocation()
   const navigate = useNavigate();
+  const [characters, setCharacters] = useState([]);
   const [access, setAccess] = useState(false);
+  
   const username = 'example@gmail.com';
   const password = '1password';
 
   const login = (userData) => {
     if (userData.username === username && userData.password === password) {
       setAccess(true);
-      navigate('home');
+      navigate('/home');
     } else {
       alert("Username and/or password are incorrect...")
     }
   }
 
   useEffect(() => {
-    !access && navigate('/');
+    !access && navigate('/')
     // eslint-disable-next-line
   },[access]);
 
 
 
   const onSearch = (character) => {
-    fetch(`http://localhost:3001/rickandmorty/character/${character}`)
+    fetch(`http://localhost:3001/rickandmorty/onsearch/${character}`)
       .then((response) => response.json())
       .then((data) => {
-        if (data.name) {
+        if (data.id) {
           let exist = characters.find((e) => e.id === data.id);
           if (exist) {
             alert('This character is already on display...');

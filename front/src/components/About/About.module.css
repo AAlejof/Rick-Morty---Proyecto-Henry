@@ -1,19 +1,16 @@
-
+/* color: #41b4c9; */
 
 .h1{
     font-size: 5rem;
-    /* color: #41b4c9; */
+    margin: 2rem;
     color: #bfde42;
-    /* text-shadow: 4px 4px #bfde42; */
     text-shadow: 4px 4px black;
     font-family: 'get_schwifty' ;
 }
 
 .h2{
-    font-size: 3rem;
-    /* color: #41b4c9; */
+    font-size: 4rem;
     color: #bfde42;
-    /* text-shadow: 4px 4px #bfde42; */
     text-shadow: 4px 4px black;
     padding-bottom: 1rem;
     font-family: 'get_schwifty' ;
@@ -29,7 +26,7 @@
     align-items: flex-start;
     padding: 2rem ;
     background-color: white;
-    margin: 3rem 2rem;
+    margin: 4rem ;
     border-radius: 1rem;
     border: solid 0.5rem;
     text-align: justify;

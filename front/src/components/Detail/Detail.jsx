@@ -1,27 +1,27 @@
+import styles from './Detail.module.css';
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
-import styles from './Detail.module.css';
 
 const Detail = () => {
     const { detailId } = useParams();
     const [character, setCharacter] = useState({});
 
     useEffect(() => {
-        fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+        fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
             .then((response) => response.json())
             .then((char) => {
                 if (char.name) {
                     setCharacter(char);
                 } else {
-                    window.alert("No hay personajes con ese ID");
+                    alert("No character with that ID");
                 }
             })
             .catch((err) => {
-                window.alert("No hay personajes con ese ID");
+                alert("No character with that ID");
             });
         return setCharacter({});
     }, [detailId])
+
 
     return (
         <div>
@@ -41,3 +41,45 @@ const Detail = () => {
 }
 
 export default Detail;
+
+
+
+
+// const Detail = () => {
+//     const { detailId } = useParams();
+//     const [character, setCharacter] = useState({});
+
+//     useEffect(() => {
+//         fetch(`https://localhost:3001/rickandmorty/detail/${detailId}`)
+//             .then((response) => response.json())
+//             .then((char) => {
+//                 if (char.name) {
+//                     setCharacter(char);
+//                 } else {
+//                     alert("No hay personajes con ese ID");
+//                 }
+//             })
+//             .catch((err) => {
+//                 alert("No hay personajes con ese ID");
+//             });
+//         return setCharacter({});
+//     }, [detailId])
+
+//     return (
+//         <div>
+//             <h2 className={styles.h2}>{character?.name}</h2>
+//             <section className={styles.section}>
+//                 <div className={styles.divDetail}>
+//                     <p className={styles.pDetail}>Status: {character?.status}</p>
+//                     <p className={styles.pDetail}>Species: {character?.species}</p>
+//                     <p className={styles.pDetail}>Gender: {character?.gender}</p>
+//                     <p className={styles.pDetail}>Origin: {character?.origin?.name}</p>
+//                 </div>
+//                 <img className={styles.imgDetail} src={character?.image} alt={character.name} />
+//             </section>
+            
+//         </div>
+//     )
+// }
+
+// export default Detail;
