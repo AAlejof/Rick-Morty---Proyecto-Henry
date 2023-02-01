@@ -59,7 +59,7 @@ function App() {
   }
 
   return (
-    <div className='App' style={{ padding: '25px' }}>
+    <div className='App' >
       {location.pathname === "/" ? <Form login={login} /> : <Navbar onSearch={onSearch} />}
       <Routes>
         <Route path='home' element={<Cards onClose={onClose} characters={characters} onSearch={onSearch}/>} />

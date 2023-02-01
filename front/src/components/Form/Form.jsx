@@ -36,7 +36,8 @@ const Form = ({login}) => {
 
 
     return (
-        
+        <main className={styles.main}>
+
         <div className={styles.div}>
             <img className={styles.loginLogo} src={logo} alt="Rick&Morty logo" />
             <form className={styles.loginForm} onSubmit={(event) => { handleSubmit(event) }} >
@@ -62,6 +63,7 @@ const Form = ({login}) => {
                 <button className={styles.loginButton} type="submit">Login</button>
             </form>
         </div>
+        </main>
 
     )
 }

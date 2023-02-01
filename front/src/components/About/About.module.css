@@ -39,7 +39,7 @@
     display: flex;
     width: 70vw;
     justify-content: center;
-    padding: rem;
+    padding-bottom: 3rem;
 }
  
 .divAbout{
@@ -52,6 +52,14 @@
     margin: 3rem 2rem;
     border-radius: 1rem;
     border: solid 0.5rem;
+}
+
+.divLogos{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .pAboutMe{

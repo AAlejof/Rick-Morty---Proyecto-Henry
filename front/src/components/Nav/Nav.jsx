@@ -28,9 +28,9 @@ const Navbar = ({ onSearch }) => {
           About
         </button>
       </Link>
-      <div className={styles.NavSearchBar}>
+      {/* <div className={styles.NavSearchBar}>
         <SearchBar onSearch={onSearch} />
-      </div>
+      </div> */}
 
       <Link to='/'><button className={styles.NavbarButton}>
           Logout
