@@ -20,6 +20,7 @@
     width: 12rem;
     height: 3rem;
     border: solid;
+    border-right: none;
     padding: 0.5rem;
     border-top-left-radius : 2rem;
     border-bottom-left-radius : 2rem;
@@ -33,6 +34,7 @@
     width: 12rem;
     height: 3rem;
     border: solid;
+    border-right: none;
     padding: 0.5rem;
     /* border-top-right-radius : 2rem;
     border-bottom-right-radius : 2rem; */

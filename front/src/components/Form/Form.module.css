@@ -1,9 +1,4 @@
-/* body{
-    background-image: url('https://www.xtrafondos.com/wallpapers/rick-y-morty-3244.jpg');
-    background-size: 120vw;
-    background-position:center;
-    background-attachment: fixed;
-} */
+
 .main{
    display: flex;
    justify-content: center;
@@ -65,4 +60,74 @@
 
 .loginLogo{
     width: 500px
+}
+
+/* ------MOBILE---------*/
+
+@media only screen and (max-width: 767px) {
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+
+        box-sizing: border-box;
+
+        background-image: url('https://www.xtrafondos.com/wallpapers/rick-y-morty-paisaje-6534.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: -18rem;
+        background-repeat: no-repeat;
+        
+     }
+     
+     .div{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 59%;
+         width: 100vw;
+         height: 100vw;
+         background-image: url("https://media1.giphy.com/media/Yo2fMrTG6dgLdiKX2z/giphy.gif?cid=790b7611de2a007ce9b8b6e4f7e796b4ec2950c7dd1329d6&rid=giphy.gif&ct=s");
+         background-size:contain;
+         background-repeat: no-repeat;   
+        }
+     
+     .loginForm{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top: 0rem;
+         padding-top: 0rem;
+        
+     }
+     
+     .loginInput{
+         width: 17rem;
+         height: 2rem;
+         border: solid;
+         padding-left: 1rem;
+         border-radius : 2rem;
+         font-size: 1.5rem;
+     }
+     
+     .loginButton{
+         width: 7rem;
+         height: 2.8rem;
+         margin: 1.5rem;
+         background-color: #bfde42;
+         border-radius : 2rem;
+         border: solid;
+         padding: 0.5rem  1rem;
+         font-size: 1.4rem ;
+     
+     }
+     
+     .loginLogo{
+         width: 95vw;
+     }
+
 }

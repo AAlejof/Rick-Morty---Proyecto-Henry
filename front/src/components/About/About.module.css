@@ -57,7 +57,7 @@
 .divLogos{
     display: flex;
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -71,4 +71,86 @@
     padding: 0%;
     border: solid 0.3rem;
     
+}
+
+/* ------MOBILE---------*/
+
+@media only screen and (max-width: 767px) {
+    
+    .h1{
+        font-size: 3.7rem;
+        margin-top: 3rem;
+        color: #bfde42;
+        text-shadow: 4px 4px black;
+        font-family: 'get_schwifty' ;
+    }
+    
+    .h2{
+        font-size: 3rem;
+        color: #bfde42;
+        text-shadow: 4px 4px black;
+        padding-bottom: 1rem;
+        font-family: 'get_schwifty' ;
+        text-align: center;
+    }
+    
+    .pAbout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        align-items: flex-start;
+        padding: 2rem ;
+        background-color: white;
+        margin: 4rem ;
+        border-radius: 1rem;
+        border: solid 0.5rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        
+    }
+    
+    
+    .section{
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
+        margin: 0rem 4rem;
+    }
+     
+    .divAbout{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem ;
+        background-color: white;
+        margin: 0.5rem 0rem;
+        border-radius: 1rem;
+        border: solid 0.5rem;
+    }
+    
+    .divLogos{
+        display: flex;
+        width: 90%;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .pAboutMe{
+        font-size: 2rem;
+    }
+    
+    .imgAbout{
+        width: 90%;
+        padding: 0%;
+        border: solid 0.3rem;
+    }
+
 }

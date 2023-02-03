@@ -31,9 +31,13 @@
 
 .pDetail{
     font-size: 2rem;
+    text-align: left;
 }
 
 .imgDetail{
     width: 50%;
-    border: solid 0.3rem;
+    border: solid 0.3rem ;
+    padding: 0.3rem;
+    background: #bfde42;
+    background-clip: padding-box;
 }

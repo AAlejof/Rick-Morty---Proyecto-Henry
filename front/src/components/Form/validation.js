@@ -15,7 +15,7 @@ const validation = (userData) => {
     else if(!userData.password){
         errors.password = "Enter password..."
     }
-    else if(userData.password.match(/\d/)){
+    else if(userData.password.match(regexPassword)){
         errors.password = "Password must have at least 1 number..."
     }
     else if(userData.password.length < 6 || userData.password.length > 10){

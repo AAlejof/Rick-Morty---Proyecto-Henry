@@ -1,4 +1,4 @@
-.card {
+/* .card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -36,4 +36,51 @@
     .img:hover {
 
     transform:scale(1.25);
+    } */
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2rem;
+        padding: 0.5rem;
+        border: 0.3rem solid;
+        border-radius: 0.5rem;
+        background-color: white;
     }
+    
+    .btnCard{
+        background-color: rgb(20, 220, 50);
+        border-radius: 2rem;
+        border: 0.18rem solid;
+        font-size: 1.2rem;
+    
+    }
+    
+    .h2 {
+        padding: 0;
+        margin: 0;
+        border-bottom: solid;
+    }
+    
+    .h2Name{
+        margin-top: 1rem;
+        border: 0.3rem solid;
+        border-radius: 0.4rem;
+        font-size: 2rem;
+    }
+    
+    .Img{
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        transition: .9s;
+        padding: 0.3rem;
+        background: #41b4c9;
+        background-clip: padding-box;
+    
+        }
+        .img:hover {
+    
+        transform:scale(2);
+        }
