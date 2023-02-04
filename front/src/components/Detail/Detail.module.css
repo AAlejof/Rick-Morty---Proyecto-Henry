@@ -41,3 +41,79 @@
     background: #bfde42;
     background-clip: padding-box;
 }
+
+.backButton{
+    height: 3rem;
+    background-color: #bfde42;
+    border-radius : 2rem;
+    border: solid;
+    margin: 0.3rem;
+    padding: 0.5rem  1rem;
+    font-size: 1.2rem;
+    font-family: 'get_schwifty' ;
+
+}
+
+/* ------MOBILE---------*/
+
+@media only screen and (max-width: 900px) {
+
+    .h2{
+        margin: 1rem;
+        font-size: 3.5rem;
+        /* color: #41b4c9; */
+        color: #bfde42;
+        /* text-shadow: 4px 4px #bfde42; */
+        text-shadow: 4px 4px black;
+        font-family: 'get_schwifty' ;
+    
+    }
+    
+    .section{
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+        margin: 0rem 4rem;
+    }
+     
+    .divDetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 90vw;
+        padding: 2rem ;
+        background-color: white;
+        margin: 1rem 2rem;
+        border-radius: 1rem;
+        border: solid 0.5rem;
+    }
+    
+    .pDetail{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    
+    .imgDetail{
+        width: 90vw;
+        border: solid 0.3rem ;
+        padding: 0.3rem;
+        background: #41b4c9;
+        background-clip: padding-box;
+    }
+
+    .backButton{
+        height: 3rem;
+        background-color: #bfde42;
+        border-radius : 2rem;
+        border: solid;
+        margin-bottom: 1rem;
+        padding: 0.5rem  1rem;
+        font-size: 1.2rem;
+        font-family: 'get_schwifty' ;
+    
+    }
+}

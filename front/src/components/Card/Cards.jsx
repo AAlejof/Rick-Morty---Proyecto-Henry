@@ -5,7 +5,7 @@ import styles from './Cards.module.css'
 function Cards({ characters, onClose, onSearch }) {
    return (
       <>
-      <h1 className={styles.h1} >Wubba Lubba Dub Dub!</h1>
+      <h1 className={styles.h1} id="h1">Wubba Lubba Dub Dub!</h1>
       <div className={characters.length ? '' : styles.divSearchBar }>
          <SearchBar onSearch={onSearch} />
       </div>
@@ -24,6 +24,7 @@ function Cards({ characters, onClose, onSearch }) {
             );
          })}
       </div>
+      {characters.length > 0 && (<a href="#h1"><button className={styles.upButton}>Up!</button></a>)}
       </>
    );
 }

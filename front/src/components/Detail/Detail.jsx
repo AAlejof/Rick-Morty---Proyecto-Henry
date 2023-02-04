@@ -1,6 +1,7 @@
 import styles from './Detail.module.css';
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+
 
 const Detail = () => {
     const { detailId } = useParams();
@@ -27,15 +28,15 @@ const Detail = () => {
         <div>
             <h2 className={styles.h2}>{character?.name}</h2>
             <section className={styles.section}>
+                <img className={styles.imgDetail} src={character?.image} alt={character.name} />
                 <div className={styles.divDetail}>
                     <p className={styles.pDetail}>Status: {character?.status}</p>
                     <p className={styles.pDetail}>Species: {character?.species}</p>
                     <p className={styles.pDetail}>Gender: {character?.gender}</p>
                     <p className={styles.pDetail}>Origin: {character?.origin?.name}</p>
                 </div>
-                <img className={styles.imgDetail} src={character?.image} alt={character.name} />
             </section>
-            
+            <Link to="/home"><button className={styles.backButton}>Back</button></Link>
         </div>
     )
 }

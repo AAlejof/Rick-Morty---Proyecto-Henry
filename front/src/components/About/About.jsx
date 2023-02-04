@@ -28,19 +28,18 @@ const About = () => {
 
             <h2 className={styles.h2}>About me</h2>
 
-            <div >
-                <section className={styles.section}>
-                    <div className={styles.divAbout}>
-                        <h2 className={styles.h2}>Alejo Fariña</h2>
-                        <p className={styles.pAboutMe}>Status: Alive </p>
-                        <p className={styles.pAboutMe}>Species: Human </p>
-                        <p className={styles.pAboutMe}>Gender: Male</p>
-                        <p className={styles.pAboutMe}>Origin: Bs.As., Argentina<br />Earth (C-137)</p>
-                    </div>
-                    <img className={styles.imgAbout} src={pic} alt="Alejo Fariña" />
-                </section>
 
-            </div>
+            <section className={styles.section}>
+                <div className={styles.divAbout}>
+                    <h2 className={styles.h2}>Alejo Fariña</h2>
+                    <p className={styles.pAboutMe}>Status: Alive </p>
+                    <p className={styles.pAboutMe}>Species: Human </p>
+                    <p className={styles.pAboutMe}>Gender: Male</p>
+                    <p className={styles.pAboutMe}>Origin: Bs.As., Argentina<br />Earth (C-137)</p>
+                </div>
+                <img className={styles.imgAbout} src={pic} alt="Alejo Fariña" />
+            </section>
+
         </div>
     )
 }

@@ -2,10 +2,6 @@
 .Navbar {
     display: flex;
     justify-content:space-between;
-    /* margin-left: 5vw;
-    margin-right: 5vw;
-    padding-left: 5vw;
-    padding-right: 5vw; */
     margin-top: 2rem;
     width: max-content;
  
@@ -39,19 +35,15 @@
 
 /* ------MOBILE---------*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
 
 .Navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-left: 5vw;
-    margin-right: 5vw;
-    padding-left: 5vw;
-    padding-right: 5vw; */
     margin-top: 2rem;
-    width: max-content;
+    width: 90vw;
  
 }
 
@@ -61,11 +53,11 @@
 }
 .buttonList{
     display: flex;
-    width: 85vw;
+    width: 80vw;
     justify-content: center;
     align-items: center;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     padding: 1rem;
     list-style:none
 }
@@ -76,7 +68,7 @@
     border-radius : 2rem;
     border: solid;
     margin: 0.3rem;
-    padding: 0.5rem  1rem;
+    padding: 0.5rem  0.7rem;
     font-size: 1.2rem;
     font-family: 'get_schwifty' ;
 
